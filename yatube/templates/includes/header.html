@@ -1,0 +1,13 @@
+{% load static %}
+{% block content %}
+    <!--Использованны классы бустрата для создания типовой навигации с логотипом-->
+    <!--В дальнейшем тут будет создано польноценное меню-->
+    <nav class="navbar navbar-light" style="background-color: lightskyblue">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'posts:index' %}">
+                <img src="{% static 'img/logo.png' %}" width="30" class="d-inline-block align-top" alt="">
+                <!--тад span используется для добовления нажных стилей отдельным участкам текста-->
+                <span style="color:red">Ya</span>tube</a>
+        </div>
+    </nav>
+{% endblock %}
